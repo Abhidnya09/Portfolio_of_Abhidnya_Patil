@@ -1,0 +1,706 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Header start-->
+  <div class="w-full h-full bg-gray-200 dark:bg-gray-200" >
+    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg" >
+        <div class="flex-1 flex justify-between items-center" >
+            <img class="sm:w-[10rem] w-[7rem]" src="Abhidnya logo.png" alt=""  id="logo">
+        </div>
+        <label for="menu-toggle" class="cursor-pointer sm-block">
+            <svg class="fill-current text-gray-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+            </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav >
+                <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block text-rose-500" href="#homesection">Home</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#aboutsection">About Me</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#educationsection">Education</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#projectsection">Projects</a></li>
+                    <!-- <li><a class="md:p-4 py-3 px-0 block" href="#testimonialsection">Testimonials</a></li> -->
+                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#footer-container">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div
+        class="h-full w-full mx-auto relative top-12 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4" id="homesection">
+        <div class="w-full relative" >
+            <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="" alt="" />
+            <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="abhi_black.png" alt="My Image" />
+        </div>
+        <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4" >
+            <h1 class="text-[red] md:text-4xl sm:text-3xl text-2xl font-semibold font-serif">Hello, My name is Abhidnya Patil</h1>
+            <h3 class="capitalize text-rose-400">i'm <span class="typing text-green-500 dark:text-green-700">Aspiring Software Developer</span></h3>
+            <p id="career_objective">Ambitious CSE graduate seeking to use software development skills in a team-driven setting.
+                Bringing innovative thinking, problem-solving expertise, and a passion for delivering good results.</p>
+            <div class="sm:mt-4 mt-2">
+                <button class="px-6 py-1 bg-rose-500 text-white rounded-sm" id="getintouch">Get In Touch</button>
+                <!-- Download CV button -->
+                <a href="Abhidnya_Malad_SCAD_intern.pdf" download="Abhidnya_Malad_SCAD_intern.pdf">
+                    <button class="px-6 py-1 bg-rose-500 text-white rounded-sm" id="downloadcv">Download CV</button>
+                </a>
+                <!-- Download CV button -->
+                 <!-- Social icon start -->
+                 <div class=" w-full h-auto py-8 flex items-center justify-start gap-2 flex-wrap">
+                  <a href="javascript:;"
+                  class="bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
+                  fill="none">
+                  <path
+                    d="M46.4233 38.6403L47.7279 30.3588H39.6917V24.9759C39.6917 22.7114 40.8137 20.4987 44.4013 20.4987H48.1063V13.4465C45.9486 13.1028 43.7685 12.9168 41.5834 12.8901C34.9692 12.8901 30.651 16.8626 30.651 24.0442V30.3588H23.3193V38.6403H30.651V58.671H39.6917V38.6403H46.4233Z"
+                    fill="#111827" />
+                  </svg>
+                  </a>
+                  <a href="javascript:;"
+                  class=" bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
+                  fill="none">
+                  <path
+                    d="M27.3762 35.7808C27.3762 31.1786 31.1083 27.4468 35.7132 27.4468C40.3182 27.4468 44.0522 31.1786 44.0522 35.7808C44.0522 40.383 40.3182 44.1148 35.7132 44.1148C31.1083 44.1148 27.3762 40.383 27.3762 35.7808ZM22.8683 35.7808C22.8683 42.8708 28.619 48.618 35.7132 48.618C42.8075 48.618 48.5581 42.8708 48.5581 35.7808C48.5581 28.6908 42.8075 22.9436 35.7132 22.9436C28.619 22.9436 22.8683 28.6908 22.8683 35.7808ZM46.0648 22.4346C46.0646 23.0279 46.2404 23.608 46.5701 24.1015C46.8997 24.595 47.3684 24.9797 47.9168 25.2069C48.4652 25.4342 49.0688 25.4939 49.6511 25.3784C50.2334 25.2628 50.7684 24.9773 51.1884 24.5579C51.6084 24.1385 51.8945 23.6041 52.0105 23.0222C52.1266 22.4403 52.0674 21.8371 51.8404 21.2888C51.6134 20.7406 51.2289 20.2719 50.7354 19.942C50.2418 19.6122 49.6615 19.436 49.0679 19.4358H49.0667C48.2708 19.4361 47.5077 19.7522 46.9449 20.3144C46.3821 20.8767 46.0655 21.6392 46.0648 22.4346ZM25.6072 56.1302C23.1683 56.0192 21.8427 55.6132 20.9618 55.2702C19.7939 54.8158 18.9606 54.2746 18.0845 53.4002C17.2083 52.5258 16.666 51.6938 16.2133 50.5266C15.8699 49.6466 15.4637 48.3214 15.3528 45.884C15.2316 43.2488 15.2073 42.4572 15.2073 35.781C15.2073 29.1048 15.2336 28.3154 15.3528 25.678C15.4639 23.2406 15.8731 21.918 16.2133 21.0354C16.668 19.8682 17.2095 19.0354 18.0845 18.1598C18.9594 17.2842 19.7919 16.7422 20.9618 16.2898C21.8423 15.9466 23.1683 15.5406 25.6072 15.4298C28.244 15.3086 29.036 15.2844 35.7132 15.2844C42.3904 15.2844 43.1833 15.3106 45.8223 15.4298C48.2612 15.5408 49.5846 15.9498 50.4677 16.2898C51.6356 16.7422 52.4689 17.2854 53.345 18.1598C54.2211 19.0342 54.7615 19.8682 55.2161 21.0354C55.5595 21.9154 55.9658 23.2406 56.0767 25.678C56.1979 28.3154 56.2221 29.1048 56.2221 35.781C56.2221 42.4572 56.1979 43.2466 56.0767 45.884C55.9656 48.3214 55.5573 49.6462 55.2161 50.5266C54.7615 51.6938 54.2199 52.5266 53.345 53.4002C52.4701 54.2738 51.6356 54.8158 50.4677 55.2702C49.5872 55.6134 48.2612 56.0194 45.8223 56.1302C43.1855 56.2514 42.3934 56.2756 35.7132 56.2756C29.033 56.2756 28.2432 56.2514 25.6072 56.1302ZM25.4001 10.9322C22.7371 11.0534 20.9174 11.4754 19.3282 12.0934C17.6824 12.7316 16.2892 13.5878 14.897 14.977C13.5047 16.3662 12.6502 17.7608 12.0116 19.4056C11.3933 20.9948 10.971 22.8124 10.8497 25.4738C10.7265 28.1394 10.6982 28.9916 10.6982 35.7808C10.6982 42.57 10.7265 43.4222 10.8497 46.0878C10.971 48.7494 11.3933 50.5668 12.0116 52.156C12.6502 53.7998 13.5049 55.196 14.897 56.5846C16.289 57.9732 17.6824 58.8282 19.3282 59.4682C20.9204 60.0862 22.7371 60.5082 25.4001 60.6294C28.0687 60.7506 28.92 60.7808 35.7132 60.7808C42.5065 60.7808 43.3592 60.7526 46.0264 60.6294C48.6896 60.5082 50.5081 60.0862 52.0983 59.4682C53.7431 58.8282 55.1373 57.9738 56.5295 56.5846C57.9218 55.1954 58.7745 53.7998 59.4149 52.156C60.0332 50.5668 60.4575 48.7492 60.5768 46.0878C60.698 43.4202 60.7262 42.57 60.7262 35.7808C60.7262 28.9916 60.698 28.1394 60.5768 25.4738C60.4555 22.8122 60.0332 20.9938 59.4149 19.4056C58.7745 17.7618 57.9196 16.3684 56.5295 14.977C55.1395 13.5856 53.7431 12.7316 52.1003 12.0934C50.5081 11.4754 48.6894 11.0514 46.0284 10.9322C43.3612 10.811 42.5085 10.7808 35.7152 10.7808C28.922 10.7808 28.0687 10.809 25.4001 10.9322Z"
+                    fill="#111827" />
+                  </svg></a>
+                  <a href="javascript:;"
+                  class="bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72"
+                  fill="none">
+                  <path
+                    d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z"
+                    fill="#111827" />
+                  </svg></a>
+                  <!-- <a href="javascript:;"
+                  class="bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72"
+                  fill="none">
+                  <path
+                    d="M50.0783 22.6244C49.7746 22.4674 49.4789 22.2953 49.1924 22.1088C48.3592 21.5579 47.5952 20.9089 46.9171 20.1756C45.2202 18.2341 44.5864 16.2644 44.353 14.8853H44.3624C44.1674 13.7406 44.248 13 44.2602 13H36.5314V42.8856C36.5314 43.2869 36.5314 43.6834 36.5146 44.0753C36.5146 44.1241 36.5099 44.1691 36.5071 44.2216C36.5071 44.2431 36.5071 44.2656 36.5024 44.2881C36.5024 44.2938 36.5024 44.2994 36.5024 44.305C36.4209 45.3773 36.0772 46.4131 35.5014 47.3214C34.9257 48.2297 34.1355 48.9825 33.2005 49.5138C32.226 50.0681 31.1238 50.359 30.0027 50.3575C26.4017 50.3575 23.4833 47.4213 23.4833 43.795C23.4833 40.1688 26.4017 37.2325 30.0027 37.2325C30.6843 37.2319 31.3618 37.3391 32.0099 37.5503L32.0192 29.6809C30.0518 29.4268 28.053 29.5832 26.149 30.1402C24.245 30.6972 22.477 31.6427 20.9567 32.9172C19.6246 34.0746 18.5047 35.4557 17.6474 36.9981C17.3211 37.5606 16.0902 39.8209 15.9411 43.4894C15.8474 45.5716 16.4727 47.7288 16.7708 48.6203V48.6391C16.9583 49.1641 17.6849 50.9556 18.8689 52.4659C19.8237 53.6774 20.9518 54.7417 22.2167 55.6244V55.6056L22.2355 55.6244C25.9771 58.1669 30.1255 58 30.1255 58C30.8436 57.9709 33.2492 58 35.9811 56.7053C39.0111 55.27 40.7361 53.1316 40.7361 53.1316C41.8381 51.8538 42.7144 50.3977 43.3274 48.8256C44.0267 46.9872 44.2602 44.7822 44.2602 43.9009V28.0459C44.3539 28.1022 45.6027 28.9281 45.6027 28.9281C45.6027 28.9281 47.4017 30.0813 50.2086 30.8322C52.2224 31.3666 54.9355 31.4791 54.9355 31.4791V23.8066C53.9849 23.9097 52.0546 23.6097 50.0783 22.6244Z"
+                    fill="#111827" />
+                  </svg></a> -->
+                  <a href="javascript:;"
+                  class="bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
+                  fill="none">
+                  <path
+                    d="M12.5068 56.8405L15.7915 44.6381C13.1425 39.8847 12.3009 34.3378 13.4211 29.0154C14.5413 23.693 17.5482 18.952 21.89 15.6624C26.2319 12.3729 31.6173 10.7554 37.0583 11.1068C42.4992 11.4582 47.6306 13.755 51.5108 17.5756C55.3911 21.3962 57.7599 26.4844 58.1826 31.9065C58.6053 37.3286 57.0535 42.7208 53.812 47.0938C50.5705 51.4668 45.8568 54.5271 40.5357 55.7133C35.2146 56.8994 29.6432 56.1318 24.8438 53.5513L12.5068 56.8405ZM25.4386 48.985L26.2016 49.4365C29.6779 51.4918 33.7382 52.3423 37.7498 51.8555C41.7613 51.3687 45.4987 49.5719 48.3796 46.7452C51.2605 43.9185 53.123 40.2206 53.6769 36.2279C54.2308 32.2351 53.445 28.1717 51.4419 24.6709C49.4388 21.1701 46.331 18.4285 42.6027 16.8734C38.8745 15.3184 34.7352 15.0372 30.8299 16.0736C26.9247 17.11 23.4729 19.4059 21.0124 22.6035C18.5519 25.801 17.2209 29.7206 17.2269 33.7514C17.2237 37.0937 18.1503 40.3712 19.9038 43.2192L20.3823 44.0061L18.546 50.8167L25.4386 48.985Z"
+                    fill="#111827" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M43.9566 36.8847C43.5093 36.5249 42.9856 36.2716 42.4254 36.1442C41.8651 36.0168 41.2831 36.0186 40.7236 36.1495C39.8831 36.4977 39.3399 37.8134 38.7968 38.4713C38.6823 38.629 38.514 38.7396 38.3235 38.7823C38.133 38.8251 37.9335 38.797 37.7623 38.7034C34.6849 37.5012 32.1055 35.2965 30.4429 32.4475C30.3011 32.2697 30.2339 32.044 30.2557 31.8178C30.2774 31.5916 30.3862 31.3827 30.5593 31.235C31.165 30.6368 31.6098 29.8959 31.8524 29.0809C31.9063 28.1818 31.6998 27.2863 31.2576 26.5011C30.9157 25.4002 30.265 24.42 29.3825 23.6762C28.9273 23.472 28.4225 23.4036 27.9292 23.4791C27.4359 23.5546 26.975 23.7709 26.6021 24.1019C25.9548 24.6589 25.4411 25.3537 25.0987 26.135C24.7562 26.9163 24.5939 27.7643 24.6236 28.6165C24.6256 29.0951 24.6864 29.5716 24.8046 30.0354C25.1049 31.1497 25.5667 32.2144 26.1754 33.1956C26.6145 33.9473 27.0937 34.6749 27.6108 35.3755C29.2914 37.6767 31.4038 39.6305 33.831 41.1284C35.049 41.8897 36.3507 42.5086 37.7105 42.973C39.1231 43.6117 40.6827 43.8568 42.2237 43.6824C43.1018 43.5499 43.9337 43.2041 44.6462 42.6755C45.3588 42.1469 45.9302 41.4518 46.3102 40.6512C46.5334 40.1675 46.6012 39.6269 46.5042 39.1033C46.2714 38.0327 44.836 37.4007 43.9566 36.8847Z"
+                    fill="#111827" />
+                  </svg></a>
+                  <a href="https://pin.it/2gRmmyEOM"
+                  class="bg-white p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 71 72"
+                  fill="none">
+                  <path
+                    d="M33.2808 13.0437C25.8492 13.893 18.4439 20.0479 18.1382 28.84C17.9461 34.2083 19.435 38.2356 24.4258 39.3664C26.5915 35.4553 23.7272 34.5927 23.2818 31.7633C21.4523 20.1686 36.346 12.2615 44.14 20.3563C49.5324 25.9615 45.9826 43.206 37.2848 41.4136C28.9537 39.7017 41.3629 25.9749 34.713 23.2796C29.3074 21.0894 26.4343 29.9798 28.9974 34.396C27.4953 41.9902 24.2599 49.1464 25.5698 58.6715C29.8183 55.5158 31.2504 49.4727 32.425 43.1702C34.5601 44.4978 35.6998 45.8789 38.4244 46.0935C48.4714 46.8891 54.0822 35.8263 52.7112 25.6218C51.4929 16.5749 42.6729 11.971 33.2808 13.0437Z"
+                    fill="#111827" />
+                  </svg></a>
+                  
+                  
+                  </div>
+                  <!-- social icon end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+    strings: ['','Frontend Developer','Aspiring Software Developer'],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
+</script>
+   <!--Header end-->
+
+   <!-- Modal start -->
+   <div class="hidden fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex items-center" id="modalCnt">
+    <!-- overlay -->
+    <div aria-hidden="true" class="fixed inset-0 w-full h-full bg-black/50 cursor-pointer">
+    </div>
+  
+    <!-- Modal -->
+    <div class="relative w-full cursor-pointer pointer-events-none transition my-auto p-4">
+      <div
+        class="w-full py-2 bg-white cursor-default pointer-events-auto dark:bg-gray-100 relative rounded-xl mx-auto max-w-sm">
+  
+        <button id="closeBtn" type="button" class="absolute top-2 right-2 rtl:right-auto rtl:left-2">
+                  <svg xlinkTitle="Close" class="h-4 w-4 hover:rotate-180 transition-all ease-in-out duration-500 cursor-pointer text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"></path>
+                  </svg>
+                  <span class="sr-only">
+                    Close
+                  </span>
+                </button>
+  
+  
+  
+        <div class="space-y-2 p-2">
+          <div class="p-2 space-y-2 text-center dark:text-dark-800">
+            <h2 class="text-xl font-bold tracking-tight" id="page-action.heading">
+              Let me reach you
+            </h2>
+            <p class="text-gray-500">
+              Are you sure you would like to do this?
+            </p>
+          </div>
+        </div>
+  
+        <div class="space-y-2">
+          <div aria-hidden="true" class="border-t border-gray-100 px-2"></div>
+  
+          <div class="grid grid-cols-1 place-items-center px-4 py-2">
+            <form noValidate class="space-y-4">
+              <div>
+                <label htmlFor="Full Name" class="mb-2 text-gray-400 text-lg">Full Name<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                <input
+                          id="Full Name"
+                          class="border p-3 shadow-md  border-gray-700 placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                          type="text"
+                          placeholder="Full Name"
+                          required
+                        />
+              </div>
+              <div>
+                <label htmlFor="email" class="mb-2 text-gray-400 text-lg">Email<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                <input
+                          id="email"
+                          class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                          type="email"
+                          placeholder="Email"
+                          required
+                        />
+              </div>
+              <div>
+                <label htmlFor="subject" class="mb-2 text-gray-400 text-lg">Subject<span class="text-red-600 inline-block p-1 text-sm">*</span></label>
+                <input
+                          id="subject"
+                          class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                          type="text"
+                          placeholder="subject"
+                          required
+                        />
+              </div>
+              <div>
+                <label htmlFor="Message" class="mb-2 text-gray-400 text-lg">Message<span class="text-red-600 st inline-block p-1 text-sm">*</span></label>
+                <textarea
+                          id="Message"
+                          class="border p-3  border-gray-700 shadow-md placeholder:text-base focus:outline-none ease-in-out duration-300 rounded-lg w-full"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+              </div>
+            </form>
+          </div>
+  
+          <div aria-hidden="true" class="border-b border-gray-700 px-2"></div>
+          <div class="px-6 py-2">
+            <div class="grid gap-2 grid-cols-[repeat(auto-fit,minmax(0,1fr))]">
+              <button type="button"
+                        class="inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-gray-800 bg-white border-gray-300 hover:bg-gray-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-600 dark:hover:border-gray-500 dark:text-gray-200 dark:focus:text-primary-400 dark:focus:border-primary-400 dark:focus:bg-gray-800">
+                        Cancel
+                      </button>
+  
+              <button type="submit"
+                        class="inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-[#4d1b80] hover:bg-[#7127BA] focus:bg-[#11071F] focus:ring-offset-[#11071F]">
+  
+                        <span class="flex items-center gap-1">
+                          <span class="">
+                            Send
+                          </span>
+                        </span>
+                      </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- modal end -->
+   
+   <!-- Home section end -->
+   <br>
+  <!-- about me start -->
+   <div class="grid sm:grid-cols-1 md:grid-cols-2 " id="aboutparent">
+    <div class=" flex-justify-center"><img src="abhisquare.png" alt="" class="aboutmeimg">
+    </div>
+    <div class="" id="aboutsection">
+      
+      <p class="about"><span>About</span> me</p>
+      <p class="aboutMeHeading">Aspiring Software Developer</p>
+      <p class="aboutmeDescription">A Techie Guy with Creative Mind...</p>
+      <ul class="skillscontainer">
+        <li>Html5 and CSS3</li>
+        <li>JavaScript</li>
+        <li>Tailwind CSS</li>
+        <li>Bootstrap5</li>
+        <li>ReactJS</li>
+
+        <!-- <li>Core Java</li> -->
+        <!-- <li>Oracle SQL</li>
+        <li>Software Development Life-Cycle</li> -->
+       
+      </ul>
+    </div>
+   </div>
+   <!-- about me end -->
+<br>
+    <!-- education start -->
+<!-- mobile -->
+ <div class="" id="educationsection">
+<img src="Timeline_vertical.jpg" alt="" class="md:hidden">
+</div>
+ <!-- mobile -->
+
+ <!-- laptop -->
+  <div id="educationsection">
+  <img src="Timeline_horizontal.jpg" alt="" class="hidden md:block">
+</div>
+ <!-- laptop -->
+     <!-- education end -->
+
+<br>
+     <!-- project video start -->
+      <!--project start-->
+ 
+<div id="projectsection">
+        <h1 id="project_heading">My Projects</h1>
+  <div class="relative flex flex-row items-center w-full h-140 px-4 mx-auto md:flex-row sm:px-6 p-8 bg-rose-300 mt-3 " >
+    
+    <div class="left w-2/5">
+      
+    </div>
+
+    <div class="right w-3/5 flex" >
+
+      
+        <div class="relative p-3 md:p-8">
+          <div class="rounded-lg text-black">
+            <!-- <video style="width:189;height:90;border-radius: 20px;border:8px double black;" controls
+              src=""></video> -->
+          </div>
+        </div>
+      </div> 
+
+      <div class="flex items-right py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10" >
+        <div class="text-right" >
+          <h2 class=" font-semibold leading-10 tracking-tight text-red-900 sm:text-4xl sm:leading-none md:text-6xl">
+           Gym Management System
+            <br>
+            <span class="font-normal text-fuchsia-950">"Boisar Fitness"</span>
+
+          </h2>
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            A Gym Management System for giving information about different type of exercises
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div
+    class="relative flex flex-row items-center width-full h-140 px-4 mx-auto md:flex-row sm:px-6 p-8 bg-rose-300 mt-3">
+    <!-- left starts -->
+    <div class="left w-3/5 flex">
+      <div class="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+        <div class="text-left">
+          <h2 class=" font-semibold leading-10 tracking-tight text-red-900 sm:text-4xl sm:leading-none md:text-6xl">
+            Product Filter and Search
+            <br>
+            <span class="font-normal text-fuchsia-950">"Sortify"</span>
+
+          </h2>
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            An E-commerce Platform for displaying details of clothes, accessories, etc. 
+          </p>
+
+        </div>
+      </div>
+      <!-- <div class="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
+        <div class="relative p-3 md:p-8">
+          <div class="rounded-lg text-black">
+            <video style="width:180;height:90;border-radius: 20px;border:8px double black;" controls
+              src="./Fire_fighting_robot.mp4"></video>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+    <!-- left ends -->
+
+    <div class="right w-2/5">
+
+    </div>
+
+  </div>
+  <!-- project-3rd -->
+
+  <div class="relative flex flex-row items-center w-full h-140 px-4 mx-auto md:flex-row sm:px-6 p-8 bg-rose-300 mt-3 " >
+    
+    <div class="left w-2/5">
+      
+    </div>
+
+    <div class="right w-3/5 flex" >
+
+      
+        <div class="relative p-3 md:p-8">
+          <div class="rounded-lg text-black">
+            <!-- <video style="width:189;height:90;border-radius: 20px;border:8px double black;" controls
+              src=""></video> -->
+          </div>
+        </div>
+      </div> 
+
+      <div class="flex items-right py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10" >
+        <div class="text-right" >
+          <h2 class=" font-semibold leading-10 tracking-tight text-red-900 sm:text-4xl sm:leading-none md:text-6xl">
+            Movie Search Engine 
+            <br>
+            <span class="font-normal text-fuchsia-950">"MovieFinder"</span>
+
+          </h2>
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            A platform to search the movie by its title or keyword matching with the title 
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- project 3rd ends -->
+
+
+
+  <!-- Project end -->
+     <!-- <div class="flex justify-center gap-8 flex-wrap">
+      <div class="rounded-lg shadow-lg bg-white max-w-sm">
+          <a href="#!">
+              <video width="320" height="240" controls class="w-full rounded-t-lg">
+                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+              </video>
+          </a>
+          <div class="p-6">
+              <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+              <p class="text-gray-700 text-base mb-4">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+              </p>
+              <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+          </div>
+      </div>
+      <div class="rounded-lg shadow-lg bg-white max-w-sm">
+        <a href="#!">
+            <video width="320" height="240" controls class="w-full rounded-t-lg">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </a>
+        <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+            <p class="text-gray-700 text-base mb-4">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+            </p>
+            <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+        </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-sm">
+          <a href="#!">
+              <video width="320" height="240" controls class="w-full rounded-t-lg">
+                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+              </video>
+          </a>
+          <div class="p-6">
+              <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+              <p class="text-gray-700 text-base mb-4">
+                  Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+              </p>
+              <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+          </div>
+      </div>
+      <div class="rounded-lg shadow-lg bg-white max-w-sm">
+        <a href="#!">
+            <video width="320" height="240" controls class="w-full rounded-t-lg">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </a>
+        <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+            <p class="text-gray-700 text-base mb-4">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+            </p>
+            <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+        </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-sm">
+      <a href="#!">
+          <video width="320" height="240" controls class="w-full rounded-t-lg">
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+      </a>
+      <div class="p-6">
+          <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+          <p class="text-gray-700 text-base mb-4">
+              Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+          </p>
+          <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+      </div>
+  </div>
+  <div class="rounded-lg shadow-lg bg-white max-w-sm">
+    <a href="#!">
+        <video width="320" height="240" controls class="w-full rounded-t-lg">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </a>
+    <div class="p-6">
+        <h5 class="text-gray-900 text-xl font-medium mb-2">Video Card</h5>
+        <p class="text-gray-700 text-base mb-4">
+            Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+        </p>
+        <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+    </div>
+</div>
+  </div> -->
+     <!-- project video end -->
+<!-- testimonial start -->
+
+<style>
+  /* Carousel animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .carousel {
+    display: flex;
+    animation: slide 12s infinite;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+</style>
+
+
+
+     <!-- footer start -->
+
+     
+     <div class="bg-gray-100" id="footer-container">
+      <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+          <div class="p-5 sm:w-2/12 border-r">
+              <div class="text-sm uppercase text-indigo-600 font-bold">Menu</div>
+              <ul>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#homesection">Home</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#aboutsection">About Me</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#educationsection">Education</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#projectsection">Projects</a>
+                  </li>
+              </ul>
+          </div>
+          
+          <div class="p-5 sm:w-7/12 border-r text-center">
+              <h3 class="font-bold text-xl text-indigo-600 mb-4">Open to Work</h3>
+              <p class="text-gray-500 text-sm mb-10">Looking forward for job opportunities in IT Industry as a Software Development Engineer and using my knowledge to solve problems in real world </p>
+          </div>
+          <div class="p-5 sm:w-3/12">
+              <div class="text-sm uppercase text-indigo-600 font-bold">Contact Us</div>
+              <ul>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#">9766603420,Boisar</a>
+                  </li>
+                  <li class="my-2">
+                      <a class="hover:text-indigo-600" href="#">abhidnyapatil09@gmail.com</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+          <!-- <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+              <a href="#" class="w-6 mx-1">
+                  <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                      viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                      style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                      <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                    -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                    0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                    -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                    0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                    -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                    0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                    -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                    -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                    1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                    -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                    6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                    0.771,-0.67 1.054,-1.093Z"></path>
+                  </svg>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                      viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                      style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                      <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373
+                    12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                    0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                    -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                  </svg>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                      viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                      style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                      <g id="Layer_1">
+                          <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                          <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                       -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
+                       -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
+                       -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
+                       -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
+                       0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
+                       2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
+                       1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
+                       0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
+                       -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
+                       -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
+                       -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
+                       0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
+                       0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
+                      </g>
+                  </svg>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                      viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                      style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                      <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                    3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                    -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                    -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                    -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                    0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                    3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                    -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                    -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                    1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                    -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                    -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                    0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                    0.4,1.5l0,4.5l2.9,0Z"></path>
+                  </svg>
+              </a>
+              <a href="#" class="w-6 mx-1">
+                  <svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
+                      viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                      style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                      <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                    -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                    -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                    0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                    0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                    -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                  </svg>
+              </a>
+          </div> -->
+          <div class="my-5">© Copyright 2025. All Rights Reserved.</div>
+      </div>
+  </div>
+     <!-- footer end -->
+</body>
+
+<script>
+    document.getElementById("getintouch").addEventListener("click",()=>{document.getElementById("modalCnt").style.display="block"})
+    
+    document.getElementById("closeBtn").addEventListener("click",()=>{document.getElementById("modalCnt").style.display="none"})
+</script>
+
+</html>

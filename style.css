@@ -1,0 +1,118 @@
+#logo{
+/* border-radius: 50%; */
+height: 10vh;
+width: 150px;
+}
+
+#navbar{
+   position: fixed;
+}
+#headersection{
+   position: fixed;
+}
+.aboutmeimg{
+    margin: auto;
+    height: 50vh;
+    border-top: 5px double #1a5dd1;
+    border-left: 5px double #79db18;
+    border-bottom: 5px double #000;
+    padding:12px 0 12px 12px;
+    border-radius: 4px;
+}
+#aboutparent{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.about{
+ margin: 0;
+ padding: 0;
+ /* border: 2px solid; */
+ font-size: 50px;
+ font-weight: 700;
+ color: #1F2397;
+}
+
+#aboutsection{
+   border-top: 5px double #1a5dd1;
+    border-right: 5px double #79db18;
+    border-bottom: 5px double #000;
+   /* padding-bottom: 100px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.aboutmeDescription{
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+}
+/* #aboutword{
+    color: green;
+} */
+ .about span{
+    color: #79db18;
+    border-bottom: 5px solid;
+   
+ }
+
+ .aboutMeHeading{
+font-size: 35px;
+font-weight: 550;
+color: #1F2397;
+ }
+
+#downloadcv{
+   background-color: green;
+}
+ .skillscontainer{
+    width: 55%;
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap:5%;
+
+ }
+
+ .skillscontainer li{
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #F43F5E;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    
+ }
+ .skillscontainer li:hover{
+    color: #F43F5E;
+    background-color: #fff;
+
+ }
+
+ #footer-container{
+   background-image: url(waveimg.svg);
+   background-size: cover;
+   
+ }
+
+ #carouselbox{
+   border: 2px solid;
+   
+ }
+
+ #project_heading{
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
+   font-weight: 700;
+ }
+#project1left{
+   border: 20px solid;
+}
+ #modal-Cnt{
+   background-color: yellow;
+ }
